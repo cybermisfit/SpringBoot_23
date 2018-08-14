@@ -9,7 +9,7 @@
 
 <div sec:authorize="isAuthenticated()">
 
-    This content is only show to authenticated users.<br/>
+    This content is only shown to authenticated users.<br/>
 
     <div sec:authorize="hasAuthority('ROLE_ADMIN')">
         This content is only shown to administrators.
