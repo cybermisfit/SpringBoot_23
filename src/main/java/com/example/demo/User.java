@@ -48,13 +48,6 @@ public class User {
     public User() {
     }
 
-    public String getPassword() {
-//        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-//        String hashedPassword = passwordEncoder.encode(password);
-//        System.out.println(hashedPassword);
-//        this.password = hashedPassword;
-        return password;
-    }
 
     public long getId() {
         return id;
@@ -72,10 +65,9 @@ public class User {
         this.email = email;
     }
 
+    public String getPassword() { return password; }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setPassword(String password) { this.password = password; }
 
     public String getFirstName() {
         return firstName;
